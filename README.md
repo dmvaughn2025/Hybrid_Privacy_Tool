@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/badge/license-Open%20Source-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-2.0-green.svg)](manifest.json)
-[![Supported Browsers](https://img.shields.io/badge/browsers-Firefox%20%7C%20Chrome-orange.svg)](#installation)
+[![Supported Browsers](https://img.shields.io/badge/browsers-Firefox-orange.svg)](#installation)
 
 **Privacy Guard** is a comprehensive privacy protection tool that combines a browser extension with an intelligent proxy to provide real-time protection against tracking, fingerprinting, and personal data extraction.
 
@@ -67,7 +67,7 @@ Privacy Guard uses a dual-component architecture for maximum protection coverage
 
 ### **Prerequisites**
 - Python 3.8+ with pip
-- Modern web browser (Firefox 57+ or Chrome 88+)
+- Firefox 57+ browser
 - Administrative permissions for proxy installation
 
 ### **Quick Setup**
@@ -95,7 +95,6 @@ Privacy Guard uses a dual-component architecture for maximum protection coverage
 
 5. **Install browser extension**
    - **Firefox**: Go to `about:debugging` → Load Temporary Add-on → Select `manifest.json`
-   - **Chrome**: Go to `chrome://extensions/` → Developer mode → Load unpacked → Select project folder
 
 ### **Configure Browser Proxy** (Optional for enhanced protection)
 - **HTTP Proxy**: `localhost:8080`
@@ -218,6 +217,7 @@ Access logs at: `logs/events.json` or through the extension popup dashboard.
 
 ## ⚠️ Known Limitations
 
+- **Browser Support**: Currently Firefox only (Chrome support in development)
 - **HTTPS Proxy**: Requires certificate installation for full HTTPS interception
 - **Performance Impact**: Minimal but measurable latency on network requests
 - **Site Compatibility**: Some sites may not function properly with aggressive blocking enabled
