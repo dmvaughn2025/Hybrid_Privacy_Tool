@@ -1,0 +1,425 @@
+{
+  "version": "3.0",
+  "last_updated": "2025-01-10T00:00:00Z",
+  "auto_update_enabled": true,
+  
+  "tracker_domains": [
+    "___ USER_DISCOVERED_FROM_ADBLOCK ___",
+    "ad-delivery.net",
+    "assets.bounceexchange.com",
+    "bounceexchange.com", 
+    "clean.gg",
+    "i.clean.gg",
+    "id5-sync.com",
+    "indexww.com",
+    "js-sec.indexww.com",
+    "lijit.com",
+    "ap.lijit.com",
+    "ntv.io",
+    "s.ntv.io",
+    "rlcdn.com",
+    "api.rlcdn.com",
+    "rubiconproject.com",
+    "pixel-us-east.rubiconproject.com",
+    "tremorhub.com",
+    "publishers.tremorhub.com",
+    "eq97f.publishers.tremorhub.com",
+    
+    "___ MAJOR_ADVERTISING_NETWORKS ___",
+    "2mdn.net",
+    "adform.net",
+    "adnxs.com",
+    "adsense.com",
+    "adsensecustomsearchads.com",
+    "adsystem.com",
+    "ads-twitter.com",
+    "amazon-adsystem.com",
+    "bidswitch.net",
+    "casalemedia.com",
+    "contextweb.com",
+    "criteo.com",
+    "demdex.net",
+    "doubleclick.net",
+    "everesttech.net",
+    "exelator.com",
+    "google-analytics.com",
+    "googleadservices.com",
+    "googletagmanager.com",
+    "googletagservices.com",
+    "googlesyndication.com",
+    "moatads.com",
+    "outbrain.com",
+    "pubmatic.com",
+    "quantcast.com",
+    "quantserve.com",
+    "rfihub.com",
+    "rtb24.com",
+    "scorecardresearch.com",
+    "smartadserver.com",
+    "spotxchange.com",
+    "taboola.com",
+    "thetradedesk.com",
+    "turn.com",
+    
+    "___ SOCIAL_MEDIA_TRACKING ___",
+    "connect.facebook.net",
+    "facebook.com",
+    "facebook.net",
+    "fbcdn.net",
+    "twitter.com",
+    "t.co",
+    "linkedin.com",
+    "licdn.com",
+    "pinterest.com",
+    "pinimg.com",
+    "instagram.com",
+    "cdninstagram.com",
+    "snapchat.com",
+    "tiktok.com",
+    "musical.ly",
+    "byteoversea.com",
+    
+    "___ ANALYTICS_AND_TRACKING ___",
+    "adobe.com",
+    "adobedtm.com",
+    "omniture.com",
+    "2o7.net",
+    "analytics.google.com",
+    "gtm.js",
+    "parsely.com",
+    "chartbeat.com",
+    "chartbeat.net",
+    "kissmetrics.com",
+    "crazyegg.com",
+    "luckyorange.com",
+    "inspectlet.com",
+    "sessioncam.com",
+    "smartlook.com",
+    "hotjar.com",
+    "fullstory.com",
+    "logrocket.com",
+    "mouseflow.com",
+    "amplitude.com",
+    "mixpanel.com",
+    "segment.com",
+    "heap.io",
+    "newrelic.com",
+    "bugsnag.com",
+    "sentry.io",
+    "comscore.com",
+    
+    "___ FINGERPRINTING_SERVICES ___",
+    "deviceatlas.com",
+    "51degrees.com",
+    "fingerprintjs.com",
+    "maxmind.com",
+    "threatmetrix.com",
+    "iovation.com",
+    "bluecava.com",
+    "crosswise.com",
+    "drawbridge.com",
+    "liveramp.com",
+    "tapad.com",
+    
+    "___ ADDITIONAL_TRACKERS ___",
+    "bing.com",
+    "yahoo.com",
+    "yandex.ru",
+    "baidu.com",
+    "zopim.com",
+    "optimizely.com",
+    "cloudflareinsights.com",
+    "adsafeprotected.com",
+    "adsymptotic.com"
+  ],
+  
+  "pii_patterns": [
+    "___ EMAIL_PATTERNS ___",
+    "email=", "e-mail=", "emailaddress=", "mail=", "user_email=", "contact_email=",
+    
+    "___ PHONE_PATTERNS ___", 
+    "phone=", "telephone=", "mobile=", "cell=", "phone_number=", "tel=",
+    
+    "___ ADDRESS_PATTERNS ___",
+    "address=", "street=", "city=", "state=", "zip=", "zipcode=", "postal=", "postcode=",
+    "country=", "region=", "location=", "address1=", "address2=",
+    
+    "___ IDENTITY_PATTERNS ___",
+    "ssn=", "social=", "social_security=", "tax_id=", "national_id=",
+    "dob=", "birthdate=", "birthday=", "dateofbirth=", "birth_date=",
+    "first_name=", "firstname=", "last_name=", "lastname=", "fullname=", "name=",
+    "middle_name=", "maiden_name=", "family_name=",
+    
+    "___ FINANCIAL_PATTERNS ___",
+    "creditcard=", "cc_number=", "cardnumber=", "card_number=", "cvv=", "cvc=", 
+    "expiry=", "exp_date=", "expiration=", "bank_account=", "routing_number=",
+    "account_number=", "iban=", "swift=", "income=", "salary=",
+    
+    "___ DOCUMENT_PATTERNS ___",
+    "license=", "drivers_license=", "passport=", "passport_number=", "id_number="
+  ],
+  
+  "pii_regex_patterns": {
+    "email": "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b",
+    "phone": "(\\+?1?[-\\.\\s]?)\\(?([0-9]{3})\\)?[-\\.\\s]?([0-9]{3})[-\\.\\s]?([0-9]{4})",
+    "ssn": "\\b\\d{3}-?\\d{2}-?\\d{4}\\b",
+    "credit_card": "\\b(?:\\d{4}[-\\s]?){3}\\d{4}\\b",
+    "zip_code": "\\b\\d{5}(?:-\\d{4})?\\b",
+    "ip_address": "\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b",
+    "url": "https?://[\\w\\-_]+(\\.[\\w\\-_]+)+([\\w\\-\\.,@?^=%&:/~\\+#]*[\\w\\-\\@?^=%&/~\\+#])?",
+    "date_mmddyyyy": "\\b(0?[1-9]|1[0-2])[-/](0?[1-9]|[12][0-9]|3[01])[-/](19|20)\\d{2}\\b",
+    "license_plate": "\\b[A-Z]{1,3}[-\\s]?\\d{1,4}[-\\s]?[A-Z]{0,3}\\b"
+  },
+  
+  "fingerprinting_apis": [
+    "___ CANVAS_APIS ___",
+    "canvas.getContext",
+    "canvas.toDataURL", 
+    "canvas.getImageData",
+    "canvas.measureText",
+    "CanvasRenderingContext2D.getImageData",
+    "CanvasRenderingContext2D.toDataURL",
+    
+    "___ WEBGL_APIS ___",
+    "WebGLRenderingContext.getParameter",
+    "WebGL2RenderingContext.getParameter",
+    "WebGLRenderingContext.getExtension",
+    "WebGLRenderingContext.getSupportedExtensions",
+    "WebGLRenderingContext.getShaderPrecisionFormat",
+    
+    "___ AUDIO_APIS ___",
+    "AudioContext",
+    "webkitAudioContext",
+    "OfflineAudioContext",
+    "AudioBuffer.getChannelData",
+    "AnalyserNode.getByteFrequencyData",
+    
+    "___ NAVIGATOR_APIS ___",
+    "navigator.hardwareConcurrency",
+    "navigator.plugins",
+    "navigator.mimeTypes", 
+    "navigator.languages",
+    "navigator.language",
+    "navigator.webdriver",
+    "navigator.deviceMemory",
+    "navigator.userAgentData",
+    "navigator.getBattery",
+    "navigator.connection",
+    "navigator.permissions",
+    "navigator.cookieEnabled",
+    "navigator.doNotTrack",
+    "navigator.maxTouchPoints",
+    "navigator.oscpu",
+    "navigator.platform",
+    "navigator.product",
+    "navigator.productSub",
+    "navigator.userAgent",
+    "navigator.vendor",
+    "navigator.vendorSub",
+    
+    "___ SCREEN_APIS ___",
+    "screen.availHeight",
+    "screen.availWidth",
+    "screen.colorDepth",
+    "screen.pixelDepth",
+    "screen.orientation",
+    "screen.height",
+    "screen.width",
+    
+    "___ WINDOW_APIS ___",
+    "window.devicePixelRatio",
+    "window.innerHeight",
+    "window.innerWidth", 
+    "window.outerHeight",
+    "window.outerWidth",
+    "window.screenX",
+    "window.screenY",
+    "window.scrollX",
+    "window.scrollY",
+    
+    "___ TIMING_APIS ___",
+    "performance.now",
+    "performance.timing",
+    "performance.navigation",
+    
+    "___ FONT_DETECTION ___",
+    "document.fonts",
+    "FontFace",
+    "document.fonts.check",
+    "document.fonts.load",
+    
+    "___ MISC_APIS ___",
+    "Intl.DateTimeFormat",
+    "Intl.Collator",
+    "getClientRects",
+    "getBoundingClientRect",
+    "getComputedStyle",
+    "OffscreenCanvas",
+    "Worker",
+    "SharedWorker",
+    "ServiceWorker"
+  ],
+  
+  "storage_watch": [
+    "___ LOCALSTORAGE ___",
+    "localStorage.setItem",
+    "localStorage.getItem", 
+    "localStorage.removeItem",
+    "localStorage.clear",
+    "localStorage.key",
+    "localStorage.length",
+    
+    "___ SESSIONSTORAGE ___",
+    "sessionStorage.setItem",
+    "sessionStorage.getItem",
+    "sessionStorage.removeItem", 
+    "sessionStorage.clear",
+    "sessionStorage.key",
+    "sessionStorage.length",
+    
+    "___ INDEXEDDB ___",
+    "indexedDB.open",
+    "indexedDB.deleteDatabase",
+    "IDBDatabase.createObjectStore",
+    "IDBObjectStore.add",
+    "IDBObjectStore.put",
+    "IDBObjectStore.get",
+    
+    "___ COOKIES ___",
+    "document.cookie",
+    "navigator.cookieEnabled",
+    
+    "___ OTHER_STORAGE ___",
+    "window.name",
+    "history.pushState",
+    "history.replaceState",
+    "Cache.put",
+    "Cache.match",
+    "ServiceWorker.register",
+    "WebSQL.openDatabase"
+  ],
+  
+  "suspicious_form_fields": [
+    "___ FINANCIAL ___",
+    "credit-card", "cc-number", "cc-exp", "cc-csc", "cvv", "cvc",
+    "bank-account", "routing-number", "account-number", "iban", "swift",
+    
+    "___ IDENTITY ___", 
+    "social-security", "ssn", "tax-id", "national-id", "passport-number",
+    "drivers-license", "license-number", "id-number",
+    
+    "___ PERSONAL ___",
+    "birth-date", "birthdate", "dob", "date-of-birth", "mother-maiden",
+    "maiden-name", "security-question", "secret-answer",
+    
+    "___ SENSITIVE ___",
+    "income", "salary", "wage", "medical-record", "health-info",
+    "insurance-number", "policy-number"
+  ],
+  
+  "tracking_parameters": [
+    "___ UTM_PARAMETERS ___",
+    "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
+    
+    "___ CLICK_IDS ___", 
+    "gclid", "fbclid", "msclkid", "yclid", "ttclid", "wickedid",
+    
+    "___ ANALYTICS_IDS ___",
+    "_ga", "_gid", "mc_eid", "mc_cid", "client_id", "user_id",
+    
+    "___ SOCIAL_TRACKING ___",
+    "fb_action_ids", "fb_action_types", "fb_source", "igshid",
+    "twitter_impression_id", "linkedin_impression_id",
+    
+    "___ EMAIL_TRACKING ___",
+    "email_id", "recipient_id", "campaign_id", "message_id", "list_id",
+    
+    "___ AFFILIATE_TRACKING ___",
+    "aff_id", "affiliate_id", "ref", "referrer", "partner_id", "source_id"
+  ],
+  
+  "fingerprinting_domains": [
+    "fingerprint.com", "fingerprintjs.com", "fp-cdn.com", "deviceatlas.com",
+    "51degrees.com", "bluecava.com", "threatmetrix.com", "iovation.com",
+    "maxmind.com", "crosswise.com", "drawbridge.com", "liveramp.com", "tapad.com"
+  ],
+  
+  "actions": {
+    "proxy": "sanitize",
+    "extension": "block", 
+    "notifications": true,
+    "logging": true,
+    "auto_update": true
+  },
+  
+  "whitelist": {
+    "domains": [
+      "localhost", "127.0.0.1", "github.com", "stackoverflow.com",
+      "mozilla.org", "firefox.com", "google.com", "duckduckgo.com"
+    ],
+    "apis": [
+      "geolocation"
+    ]
+  },
+  
+  "severity_levels": {
+    "tracker": "medium",
+    "fingerprinting": "high", 
+    "pii_extraction": "critical",
+    "storage_abuse": "medium",
+    "cross_site_tracking": "high"
+  },
+  
+  "auto_update": {
+    "enabled": true,
+    "update_interval_hours": 24,
+    "sources": [
+      {
+        "name": "DuckDuckGo Tracker Radar",
+        "url": "https://staticcdn.duckduckgo.com/trackerblocking/v4/tds.json",
+        "type": "json",
+        "enabled": true
+      },
+      {
+        "name": "EasyPrivacy",
+        "url": "https://easylist.to/easylist/easyprivacy.txt", 
+        "type": "adblock_filter",
+        "enabled": true
+      },
+      {
+        "name": "Disconnect.me",
+        "url": "https://services.disconnect.me/disconnect-plaintext.json",
+        "type": "json", 
+        "enabled": true
+      }
+    ],
+    "backup_count": 5,
+    "last_update": null,
+    "next_update": null
+  },
+  
+  "statistics": {
+    "total_tracker_domains": 0,
+    "user_discovered_domains": 11,
+    "auto_discovered_domains": 0,
+    "total_pii_patterns": 0,
+    "total_fingerprint_apis": 0,
+    "total_storage_methods": 0,
+    "last_calculated": null
+  },
+  
+  "metadata": {
+    "created_by": "Privacy Guard Enhanced",
+    "license": "Open Source",
+    "version_history": ["1.0", "2.0", "3.0"],
+    "sources": [
+      "DuckDuckGo Tracker Radar",
+      "EasyPrivacy List", 
+      "Disconnect.me Tracker List",
+      "EFF Panopticlick Research",
+      "Mozilla MDN Web API Documentation",
+      "OWASP Web Security Testing Guide",
+      "User Discovery via AdBlock Plus Analysis"
+    ]
+  }
+}

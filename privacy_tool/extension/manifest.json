@@ -1,0 +1,62 @@
+{
+  "manifest_version": 2,
+  "name": "Privacy Guard - Advanced Privacy Protection",
+  "version": "2.0",
+  "description": "Comprehensive privacy monitoring and protection against tracking, fingerprinting, and data exfiltration",
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Privacy Guard - Click to view privacy status",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "notifications",
+    "<all_urls>",
+    "http://localhost:8081/*"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  
+  "web_accessible_resources": [
+    "popup.html",
+    "popup.js"
+  ],
+  
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  
+  "applications": {
+    "gecko": {
+      "id": "privacy-guard@enhanced.com",
+      "strict_min_version": "57.0"
+    }
+  }
+}
